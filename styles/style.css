@@ -1,0 +1,36 @@
+/* Global font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 3%;
+    border-top: 3px solid transparent;
+}
+
+nav a:hover {
+    border-top-color: #0065FC;
+    color: #0065FC;
+}
+
+
+
+#header-logo {
+    margin-right: auto;
+    padding: 0 2%;
+}
