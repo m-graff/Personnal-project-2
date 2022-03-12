@@ -6,13 +6,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --blue: #0065FC;
+    --lightgrey: #f2f2f2;
+}
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
+/* Logo & Navigation */
 nav {
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -24,13 +29,56 @@ nav a {
 }
 
 nav a:hover {
-    border-top-color: #0065FC;
-    color: #0065FC;
+    border-top-color: var(--blue);
+    color: var(--blue);
 }
-
-
 
 #header-logo {
     margin-right: auto;
     padding: 0 2%;
+}
+
+/* Body */
+.wrapper {
+    padding: 0 2%;
+    line-height: 0.8;
+}
+
+.wrapper p {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+/* Search bar */
+.search-bar {
+    display: flex;
+}
+
+.search-bar i {
+    padding: 1.5%;
+    background-color: var(--lightgrey);
+    border-radius: 15px 0 0 15px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding-left: 1%;
+    border-left: none;
+    border-right: none;
+}
+
+.search-bar input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.search-bar button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 5%;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 0 15px 15px 0;
+    border: none;
 }
